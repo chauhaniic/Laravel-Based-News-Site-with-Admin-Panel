@@ -19,7 +19,7 @@
                          <!-- feature_article_title -->
 
  <div class="feature_article_date">
-    <a href="{{ url('/author') }}/{{ $hot_news->creator->id }}" >{{ $hot_news->creator->name }}</a>,
+    <a href="{{ url('/author') }}/{{ $hot_news->creator->name }}" >{{ $hot_news->creator->name }}</a>,
       {{ date('F j,Y',strtotime( $hot_news->created_at )) }}           </a></div>
                         <!-- feature_article_date -->
 
@@ -57,7 +57,7 @@
                         </div>
                         <!-- feature_article_title -->
 
-  <div class="feature_article_date"><a href="{{ url('/author') }}/{{ $item->creator->id }}"  >{{ $item->creator->name }}</a>, {{ date('F j,Y',strtotime( $item->created_at )) }}   </div>
+  <div class="feature_article_date"><a href="{{ url('/author') }}/{{ $item->creator->name }}"  >{{ $item->creator->name }}</a>, {{ date('F j,Y',strtotime( $item->created_at )) }}   </div>
                         <!-- feature_article_date -->
 
                         <div class="feature_article_content">
@@ -122,7 +122,7 @@
                     <h2><a href="{{ url('/details') }}/{{ $item->slug }}" target="_self">{{ $item->title }} </a></h2>
                 </div>
                 <!----category_article_title------>
-  <div class="category_article_date"> <a href="{{ url('/author') }}/{{ $item->creator->id }}"  >{{ $item->creator->name }}</a>, {{ date('F j,Y',strtotime( $item->created_at )) }}</div>
+  <div class="category_article_date"> <a href="{{ url('/author') }}/{{ $item->creator->name }}"  >{{ $item->creator->name }}</a>, {{ date('F j,Y',strtotime( $item->created_at )) }}</div>
                 <!----category_article_date------>
                 <div class="category_article_content">
                     {{ str_limit( $item->short_description,100,'...' )  }}
@@ -151,7 +151,7 @@
                         <span class="tag purple">{{ $category->name }}</span>
 
                         <h3 class="media-heading"><a href="{{ url('/details') }}/{{ $item->slug }}" >{{ $item->title }}</a></h3>
-                        <span class="media-date"><a href="{{ url('/author') }}/{{ $item->creator->id }}"  >{{ $item->creator->name }}</a>, {{ date('F j,Y',strtotime( $item->created_at )) }}</span>
+                        <span class="media-date"><a href="{{ url('/author') }}/{{ $item->creator->name }}"  >{{ $item->creator->name }}</a>, {{ date('F j,Y',strtotime( $item->created_at )) }}</span>
 
                         <div class="media_social">
                             
@@ -193,7 +193,7 @@
                 <a href="{{ url('/details') }}/{{ $item->slug }}">{{ $item->title }}</a>
             </h3> <span class="media-date">
                 <a href="#">{{ date('j F -y',strtotime($item->created_at)) }}</a>,  by:
-                 <a href="{{ url('/author') }}/{{ $item->creator->id }}">{{ $item->creator->name }}</a></span>
+                 <a href="{{ url('/author') }}/{{ $item->creator->name }}">{{ $item->creator->name }}</a></span>
 
             <div class="widget_article_social">
                 
